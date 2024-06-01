@@ -13,8 +13,8 @@ const Login: React.FC = () => {
   const dispatch = useAppDispatch();
 
   const initialCredential = {
-    email: "admin@gmail.com",
-    password: "123456",
+    email: "",
+    password: "",
   };
 
   const validationRules: { [key: string]: Rule[] } = {
