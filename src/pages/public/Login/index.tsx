@@ -59,7 +59,11 @@ const Login: React.FC = () => {
     <div className="h-screen bg-gray-300 flex justify-center items-center">
       {contextHolder}
 
-      <Card title="Please Login As Admin" className="w-2/4" bordered={false}>
+      <Card
+        title="Please Login As Admin"
+        className="max-sm:w-11/12 w-2/4"
+        bordered={false}
+      >
         <Form
           layout="vertical"
           name="login-form"
