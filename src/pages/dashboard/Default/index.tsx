@@ -7,7 +7,7 @@ const Default: React.FC = () => (
     <Col span={12}>
       <Card bordered={false}>
         <Statistic
-          title="Active"
+          title="Sales"
           value={11.28}
           precision={2}
           valueStyle={{ color: "#3f8600" }}
@@ -19,7 +19,7 @@ const Default: React.FC = () => (
     <Col span={12}>
       <Card bordered={false}>
         <Statistic
-          title="Idle"
+          title="Expense"
           value={9.3}
           precision={2}
           valueStyle={{ color: "#cf1322" }}
@@ -32,7 +32,7 @@ const Default: React.FC = () => (
     <Col span={12}>
       <Card bordered={false}>
         <Statistic
-          title="Active"
+          title="Products View"
           value={11.28}
           precision={2}
           valueStyle={{ color: "#3f8600" }}
@@ -44,7 +44,7 @@ const Default: React.FC = () => (
     <Col span={12}>
       <Card bordered={false}>
         <Statistic
-          title="Idle"
+          title="Users"
           value={9.3}
           precision={2}
           valueStyle={{ color: "#cf1322" }}

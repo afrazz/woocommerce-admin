@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { notification } from 'antd';
 import { auth } from 'config/firebaseConfig'
 import { signInWithEmailAndPassword, signOut as fbSignOut } from 'firebase/auth'
 import errorHandler from 'utils/errorHandler';
@@ -70,9 +71,14 @@ export const authSlice = createSlice({
       //   // state.loading = true
       // })
       .addCase(signIn.fulfilled, (state: IState, action) => {
+     
         // state.loading = false
         state.token = action.payload.token
         state.user = action.payload.user
+
+        notification.success({
+          message: 'Welcome! Now You are Logged in as a Admin!'
+        })
       })
       .addCase(signIn.rejected, (state:IState, action) => {
         // state.loading = false

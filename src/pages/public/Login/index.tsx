@@ -1,7 +1,5 @@
 import { LockOutlined, MailOutlined } from "@ant-design/icons";
 import { Button, Card, Form, Input, notification } from "antd";
-import { auth } from "config/firebaseConfig";
-import { signInWithEmailAndPassword } from "firebase/auth";
 import { Rule } from "antd/lib/form";
 import React from "react";
 import { useAppDispatch } from "hooks/useStore";
@@ -40,19 +38,6 @@ const Login: React.FC = () => {
     const { email, password } = values;
 
     dispatch(signIn({ email, password }));
-    // signInWithEmailAndPassword(auth, email, password)
-    //   .then((userCredential) => {
-    //     // Signed in
-    //     const user = userCredential.user;
-
-    //     // ...
-    //   })
-    //   .catch((error) => {
-    //     api["error"]({
-    //       message: "Login Failed",
-    //       description: error.message,
-    //     });
-    //   });
   };
 
   return (

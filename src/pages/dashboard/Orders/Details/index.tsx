@@ -1,15 +1,5 @@
-import {
-  Card,
-  Col,
-  Collapse,
-  Flex,
-  Row,
-  Select,
-  Space,
-  Tag,
-  notification,
-} from "antd";
-import React, { useEffect, useState } from "react";
+import { Card, Col, Flex, Row, Select, notification } from "antd";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import moment from "moment";
 import OrderItemsPopOverCard from "./OrderItemsPopOverCard";
@@ -68,7 +58,7 @@ const Details = () => {
       ) : (
         singleOrder?.id && (
           <>
-            <Flex justify="space-between">
+            <Flex justify="space-between" wrap="wrap">
               <div>
                 <h1>OrderID: #{singleOrder.id}</h1>
                 <p>
@@ -97,7 +87,7 @@ const Details = () => {
 
               <div>
                 <h2>
-                  Status:
+                  Status:{" "}
                   <Select
                     defaultValue={singleOrder.status}
                     value={status}

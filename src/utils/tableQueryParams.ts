@@ -18,7 +18,6 @@ export interface TableParams {
   }
 
 
-
 export const getQueryParams = (params: TableParams) => {
     const queryParams = {
       per_page: params.pagination?.pageSize,
