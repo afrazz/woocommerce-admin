@@ -72,15 +72,13 @@ const Details = () => {
                 <p>
                   Total Amount:{" "}
                   <b className="text-black">
-                    {singleOrder.currency}
-                    {singleOrder.total}
+                    {singleOrder.currency} {singleOrder.total}
                   </b>
                 </p>
                 <p>
                   Total Tax:{" "}
                   <b className="text-black">
-                    {singleOrder.currency}
-                    {singleOrder.total_tax}
+                    {singleOrder.currency} {singleOrder.total_tax}
                   </b>
                 </p>
               </div>
@@ -124,22 +122,19 @@ const Details = () => {
                           <p>
                             Price:{" "}
                             <b className="text-black">
-                              {singleOrder.currency}
-                              {cur.price}
+                              {singleOrder.currency} {cur.price}
                             </b>
                           </p>
                           <p>
                             Sub Total:{" "}
                             <b className="text-black">
-                              {singleOrder.currency}
-                              {cur.subtotal}
+                              {singleOrder.currency} {cur.subtotal}
                             </b>
                           </p>
                           <p>
                             Total:{" "}
                             <b className="text-black">
-                              {singleOrder.currency}
-                              {cur.total}
+                              {singleOrder.currency} {cur.total}
                             </b>
                           </p>
                         </>

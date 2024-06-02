@@ -156,7 +156,7 @@ const QuantityForm: React.FC<IProps> = ({
           <InputNumber min={1} max={100} />
         </Form.Item>
 
-        <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+        <Form.Item className="ml-6">
           <Button type="primary" htmlType="submit" loading={formLoading}>
             Update Quantity
           </Button>

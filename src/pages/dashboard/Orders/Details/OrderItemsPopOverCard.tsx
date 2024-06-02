@@ -28,7 +28,7 @@ const OrderItemsPopOverCard = ({ item, orderDetails, getOrderById }: any) => {
           closeForm={closeOpenQuantityForm}
         />
       }
-      title="Title"
+      // title="Update Quantity"
       trigger="click"
       open={openQuantityForm}
       onOpenChange={handleOpenChange}

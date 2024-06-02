@@ -70,8 +70,7 @@ const OrderList: React.FC = () => {
       dataIndex: "total",
       render: (amount, item) => (
         <b>
-          {item.currency}
-          {amount}
+          {item.currency} {amount}
         </b>
       ),
     },
